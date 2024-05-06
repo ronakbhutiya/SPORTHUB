@@ -1,0 +1,35 @@
+.header {
+  height: 10rem;
+  background-color: #6cbd15;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+  }
+
+  &__logo {
+    color: #fff;
+    font-size: 3.2rem;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-link:hover,
+  .nav-link:active {
+    color: #333;
+  }
+}
