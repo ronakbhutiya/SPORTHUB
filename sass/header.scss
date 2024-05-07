@@ -2,6 +2,10 @@
   height: 10rem;
   background-color: #6cbd15;
 
+  &__content {
+    height: 100vh;
+    background-color: red;
+  }
   &__box {
     display: flex;
     justify-content: space-between;
@@ -33,3 +37,52 @@
     color: #333;
   }
 }
+.landing {
+  // height: 100vh;
+  height: calc(100vh - 10rem);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("photo1.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  // align-items: center;
+
+  &__content {
+    max-width: 60rem;
+    // text-align: left;
+  }
+  &__heading {
+    font-size: 8rem;
+    color: #fff;
+  }
+  &__text {
+    margin: 3.2rem 0;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+}
+.btn {
+  border: none;
+  background-color: #6cbd15;
+  padding: 1.5rem 3.3rem;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+.btn-white {
+  background-color: #fff;
+  color: #000;
+  margin-left: 2rem;
+}
+
+// width: calc(
+//   2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+// );

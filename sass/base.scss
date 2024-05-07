@@ -7,8 +7,41 @@
 }
 html {
   font-size: 62.5%;
+  font-family: sans-serif;
 }
 .container {
   max-width: 120rem;
   margin: 0 auto;
+}
+.about-text-box {
+  text-align: center;
+  margin-top: 9.6rem;
+  color: #333;
+}
+.about-heading {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.about-text {
+  font-size: 1.8rem;
+  margin: 2.5rem 0;
+}
+.about-photo {
+  width: 100%;
+}
+.btn-secondary {
+  color: #fff;
+  padding: 1.5rem 3.3rem;
+  background-color: #6cbd15;
+  border: none;
+  outline: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  margin: 3.5rem 0;
+  &:hover{
+    background-color: #333;
+  }
+}
+.center{
+  text-align: center;
 }
