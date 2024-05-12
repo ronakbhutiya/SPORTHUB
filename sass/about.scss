@@ -1,0 +1,31 @@
+.about-text-box {
+  text-align: center;
+  margin-top: 9.6rem;
+  color: var(--color-dark-1);
+}
+.about-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--color-dark-2);
+}
+.about-text {
+  font-size: 1.8rem;
+  margin: 2.5rem 0;
+}
+.about-photo {
+  width: 100%;
+}
+.btn-secondary {
+  font-size: 2rem;
+  color: var(--color-white);
+  padding: 1.5rem 3.3rem;
+  background-color: var(--color-green);
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 3.5rem 0;
+  &:hover {
+    background-color: var(--color-dark-1);
+  }
+}

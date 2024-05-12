@@ -1,10 +1,9 @@
 .header {
   height: 10rem;
-  background-color: #6cbd15;
+  background-color:var(--color-green);
 
   &__content {
     height: 100vh;
-    background-color: red;
   }
   &__box {
     display: flex;
@@ -14,7 +13,7 @@
   }
 
   &__logo {
-    color: #fff;
+    color: var(--color-white);
     font-size: 3.2rem;
   }
 
@@ -29,12 +28,12 @@
   .nav-link:visited {
     font-size: 1.8rem;
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white);
     transition: all 0.3s ease-in-out;
   }
   .nav-link:hover,
   .nav-link:active {
-    color: #333;
+    color:var(--color-dark-1);
   }
 }
 .landing {
@@ -45,9 +44,9 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  align-items: center;
+  
 
-  // align-items: center;
+  align-items: center;
 
   &__content {
     max-width: 60rem;
@@ -55,34 +54,30 @@
   }
   &__heading {
     font-size: 8rem;
-    color: #fff;
+    color: var(--color-white);
   }
   &__text {
     margin: 3.2rem 0;
     font-size: 2.5rem;
-    color: #fff;
+    color:var(--color-white);
   }
 }
 .btn {
   border: none;
-  background-color: #6cbd15;
+  background-color:var(--color-green);
   padding: 1.5rem 3.3rem;
-  color: #fff;
+  color: var(--color-white);
   font-size: 1.6rem;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 
   &:hover {
-    background-color: #fff;
+    background-color: var(--color-white);
     color: #000;
   }
 }
 .btn-white {
-  background-color: #fff;
+  background-color: var(--color-white);
   color: #000;
   margin-left: 2rem;
 }
-
-// width: calc(
-//   2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
-// );

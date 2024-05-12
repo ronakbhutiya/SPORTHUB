@@ -1,0 +1,24 @@
+.blog {
+  display: flex;
+ 
+
+  &__photo {
+    margin-top:-7rem ;
+    width: 17%;
+    transform: translateY(-5rem);
+   
+  }
+  &__text-box {
+    box-shadow: 0rem .5rem 1rem rgba(0,0,0,.5);
+    padding: 1rem 2.5rem ;
+  }
+  &__heading {
+    color: var(--color-dark-2);
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  &__text {
+    font-size: 1.6rem;
+    color:  var(--color-dark-2);
+  }
+}
