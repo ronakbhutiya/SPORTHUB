@@ -1,24 +1,33 @@
 .blog {
   display: flex;
- 
+
 
   &__photo {
-    margin-top:-7rem ;
-    width: 17%;
-    transform: translateY(-5rem);
-   
+    margin-top: -7rem;
+    width: 20%;
+    transform: translateY(-5rem) translateX(-10rem);
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
   }
   &__text-box {
-    box-shadow: 0rem .5rem 1rem rgba(0,0,0,.5);
-    padding: 1rem 2.5rem ;
+    background-color: var(--color-white);
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    padding: 1rem 2.5rem;
+    max-width: 100rem;
+    margin: 0 auto;
+    display: flex;
   }
   &__heading {
     color: var(--color-dark-2);
     font-size: 3rem;
     font-weight: 600;
+    margin: 2rem 0;
   }
   &__text {
     font-size: 1.6rem;
-    color:  var(--color-dark-2);
+    color: var(--color-dark-2);
+    margin: 2rem 0;
+    line-height: 1.3;
   }
 }

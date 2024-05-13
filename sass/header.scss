@@ -1,6 +1,7 @@
 .header {
   height: 10rem;
-  background-color:var(--color-green);
+  background-color: var(--color-green);
+  position: relative;
 
   &__content {
     height: 100vh;
@@ -10,12 +11,22 @@
     justify-content: space-between;
     align-items: center;
     height: 10rem;
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 2.5rem;
+    }
   }
 
   &__logo {
     color: var(--color-white);
     font-size: 3.2rem;
+    z-index: 1000;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 2.9rem;
+    }
   }
+  
+
 
   .nav-list {
     list-style: none;
@@ -23,6 +34,9 @@
     justify-content: center;
     align-items: center;
     gap: 3.2rem;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
   }
   .nav-link:link,
   .nav-link:visited {
@@ -33,7 +47,25 @@
   }
   .nav-link:hover,
   .nav-link:active {
-    color:var(--color-dark-1);
+    color: var(--color-dark-1);
+  }
+  .mobile_navbar-btn {
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+      z-index: 222;
+    }
+  }
+  .mobile_navbar-icon {
+    color: var(--color-white);
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .mobile_navbar-icon[name="close-outline"] {
+    display: none;
   }
 }
 .landing {
@@ -44,27 +76,30 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  
 
   align-items: center;
 
   &__content {
     max-width: 60rem;
+    padding: 0 2rem;
     // text-align: left;
   }
   &__heading {
     font-size: 8rem;
     color: var(--color-white);
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 5rem;
+    }
   }
   &__text {
     margin: 3.2rem 0;
     font-size: 2.5rem;
-    color:var(--color-white);
+    color: var(--color-white);
   }
 }
 .btn {
   border: none;
-  background-color:var(--color-green);
+  background-color: var(--color-green);
   padding: 1.5rem 3.3rem;
   color: var(--color-white);
   font-size: 1.6rem;
@@ -80,4 +115,7 @@
   background-color: var(--color-white);
   color: #000;
   margin-left: 2rem;
+  @media only screen and (max-width: $bp-smallest-btn) {
+    margin: 1rem 0;
+  }
 }

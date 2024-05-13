@@ -7,19 +7,36 @@
   font-family: sans-serif;
   //   margin: 3.2rem 0;
   padding-top: 6rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 3.3rem;
+  }
 }
 
 .feature {
   &-text {
     line-height: 1.5;
     font-size: 1.8rem;
-    color:  var(--color-white);
+    color: var(--color-white);
     margin: 2rem 0 4.5rem 0;
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 5rem;
+    }
+    @media only screen and (max-width: $bp-smallest-btn) {
+      padding: 0;
+    }
   }
   &-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 3.2rem;
+    padding: 0 5rem;
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: $bp-smallest-btn) {
+      padding: 0;
+    }
   }
   &-img {
     cursor: pointer;
@@ -27,16 +44,19 @@
     width: 100%;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+    @media only screen and (max-width: $bp-medium) {
+      width: 70%;
+    }
 
     &:hover {
       transform: scale(1.2);
     }
   }
-  &-heading{
+  &-heading {
     font-size: 2.5rem;
     margin-top: 2rem;
     font-weight: 500;
-    color:  var(--color-white);
+    color: var(--color-white);
   }
 }
 .btn-box {
@@ -44,4 +64,9 @@
   justify-content: space-around;
   align-items: center;
   margin-top: -3.5rem;
+}
+.hidden {
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }

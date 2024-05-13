@@ -13,7 +13,7 @@
         <div class="container">
             <div class="header__box">
                 <h1 class="header__logo">Sporthub</h1>
-                <nav>
+                <nav class="navigation">
                     <ul class="nav-list">
                         <li><a href="#home" class="nav-link">Home</a></li>
                         <li><a href="#about" class="nav-link">About</a></li>
@@ -21,9 +21,13 @@
                         <li><a href="#games" class="nav-link">Games</a></li>
                         <li><a href="#classes" class="nav-link">Classes</a></li>
                         <li><a href="#blog" class="nav-link">Blog</a></li>
-                        <li><a href="#" class="nav-link">Contactt</a></li>
+                        <li><a href="#contect" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="mobile_navbar-btn">
+                    <ion-icon name="menu-outline" class="mobile_navbar-icon"></ion-icon>
+                    <ion-icon name="close-outline" class="mobile_navbar-icon"></ion-icon>
+                </div>
             </div>
         </div>
     </header>
@@ -50,7 +54,6 @@
             <div class="center">
                 <button class="btn-secondary">READ MORE</button>
             </div>
-
         </div>
     </section>
     <section class="section-feature" id="games">
@@ -110,8 +113,8 @@
     <div class="container">
         <div class="btn-box">
             <button class="btn-secondary">READ MORE</button>
-            <button class="btn-secondary">READ MORE</button>
-            <button class="btn-secondary">READ MORE</button>
+            <button class="btn-secondary hidden">READ MORE</button>
+            <button class="btn-secondary hidden">READ MORE</button>
         </div>
     </div>
     <section id="classes">
@@ -131,19 +134,24 @@
                 <p class="about-heading">What Says Our Players</p>
             </div>
             <div class="blog">
-                <img src="images.jpeg" alt="" class="blog__photo">
                 <div class="blog__text-box">
-                    <p class="blog__heading">Hitman</p>
-                    <p class="blog__text">There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered
-                        alteration in some form, by injected humour, orThere are many variations of passages of Lorem
-                        Ipsum
-                        available, but the majority have suffered alteration in some form, by injected humour, or</p>
+                    <img src="images.jpeg" alt="" class="blog__photo">
+                    <div>
+                        <p class="blog__heading">Hitman</p>
+                        <p class="blog__text">There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered
+                            alteration in some form, by injected humour, orThere are many variations of passages of
+                            Lorem
+                            Ipsum
+                            available, but the majority have suffered alteration in some form, by injected humour, or
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="Contact">
+    <section class="Contact" id="contect">
         <div class="container">
             <div class="form">
                 <form action="" class="form__group">
@@ -161,6 +169,86 @@
             </div>
         </div>
     </section>
+    <footer class="section-footer">
+        <div class="container">
+            <div class="footer">
+                <div>
+                    <p class="footer__header">Sporthub</p>
+                    <p class="footer__text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                        Ut
+                        enim ad minim veniam, quis nostrud exercitation u</p>
+                </div>
+                <div>
+                    <p class="footer__header">Menu</p>
+                    <ul class="footer__ul">
+                        <li class="footer__list">Home</li>
+                        <li class="footer__list">About</li>
+                        <li class="footer__list">Service</li>
+                        <li class="footer__list">Pricing</li>
+                        <li class="footer__list">Contect us</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="footer__header">usefull link</p>
+                    <ul class="footer__ul">
+                        <li class="footer__list">Adipiscing</li>
+                        <li class="footer__list">Elit, sed</li>
+                        <li class="footer__list">do</li>
+                        <li class="footer__list">Eiusmod </li>
+                        <li class="footer__list">Tempor </li>
+                        <li class="footer__list">incididunt </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="footer__header">Contect Us</p>
+                    <ul class="footer__ul">
+                        <li class="footer__list  flex">
+                            <img src="location.svg" alt="" class="footer__icon">
+                            <a class="footer__link" href="#">No.123 Chalingt Gates</a>
+                        </li>
+                        <li class="footer__list flex">
+                            <img src="call.svg" alt="" class="footer__icon">
+                            <a class="footer__link" href="#">Call : +01 1234567890</a>
+                        </li>
+                        <li class="footer__list flex">
+                            <img src="email.svg" alt="" class="footer__icon">
+                            <a class="footer__link" href="#">Email:demo@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-contect">
+                <div class="social">
+                    <a href=""> <img src="facebook-176-svgrepo-com (1).svg" alt="" class="contect__icon">
+                    </a>
+
+                </div>
+                <div class="social">
+                    <a href="#"><img src="twitter-154-svgrepo-com.svg" alt="" class="contect__icon">
+                    </a>
+
+                </div>
+                <div class="social">
+                    <a href="#"> <img src="linkedin-logotype-svgrepo-com.svg" alt="" class="contect__icon">
+                    </a>
+
+                </div>
+                <div class="social">
+                    <a href="#"> <img src="instagram-svgrepo-com.svg" alt="" class="contect__icon">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js.js"></script>
 </body>
+
 
 </html>
