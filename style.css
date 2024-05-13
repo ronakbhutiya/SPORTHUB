@@ -211,6 +211,11 @@ html {
   color: var(--color-white);
   margin: 2rem 0 4.5rem 0;
 }
+@media only screen and (max-width: 56.25em) {
+  .feature-text {
+    margin: 0;
+  }
+}
 @media only screen and (max-width: 32.19em) {
   .feature-text {
     padding: 0 5rem;
@@ -269,6 +274,15 @@ html {
 @media only screen and (max-width: 56.25em) {
   .hidden {
     display: none;
+  }
+}
+
+.none {
+  display: none;
+}
+@media only screen and (max-width: 56.25em) {
+  .none {
+    display: block;
   }
 }
 
@@ -503,6 +517,12 @@ html {
 }
 .social:hover {
   background-color: var(--color-green);
+}
+
+.footer--text {
+  padding: 4rem 0;
+  font-size: 1.6rem;
+  color: var(--color-white);
 }
 
 @media (max-width: 48em) {

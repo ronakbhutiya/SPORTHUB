@@ -19,6 +19,9 @@
     font-size: 1.8rem;
     color: var(--color-white);
     margin: 2rem 0 4.5rem 0;
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0;
+    }
     @media only screen and (max-width: $bp-smallest) {
       padding: 0 5rem;
     }
@@ -64,9 +67,16 @@
   justify-content: space-around;
   align-items: center;
   margin-top: -3.5rem;
+  
 }
 .hidden {
   @media only screen and (max-width: $bp-medium) {
     display: none;
+  }
+}
+.none {
+  display: none;
+  @media only screen and (max-width: $bp-medium) {
+    display: block;
   }
 }
