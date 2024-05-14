@@ -552,10 +552,10 @@ body {
     visibility: visible;
     pointer-events: auto;
   }
-  .active .mobile-navbar-btn .mobile-navbar-icon[name=close-outline] {
+  .active .mobile_navbar-btn .mobile_navbar-icon[name=close-outline] {
     display: block;
   }
-  .active .mobile-navbar-btn .mobile-navbar-icon[name=menu-outline] {
+  .active .mobile_navbar-btn .mobile_navbar-icon[name=menu-outline] {
     display: none;
   }
 }
