@@ -3,7 +3,7 @@
   margin-top: 9.6rem;
   color: var(--color-dark-1);
   @media only screen and (max-width: $bp-smallest) {
-  margin-top: 5rem;
+    margin-top: 5rem;
   }
 }
 .about-heading {
@@ -11,7 +11,7 @@
   font-weight: 600;
   color: var(--color-dark-2);
   @media only screen and (max-width: $bp-smallest) {
-   font-size: 3rem;
+    font-size: 3rem;
   }
 }
 .about-text {
@@ -20,6 +20,8 @@
 }
 .about-photo {
   width: 100%;
+  object-fit: contain;
+  height: 50rem;
 }
 .btn-secondary {
   font-size: 2rem;
@@ -34,5 +36,4 @@
   &:hover {
     background-color: var(--color-dark-1);
   }
-
 }

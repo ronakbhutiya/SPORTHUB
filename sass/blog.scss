@@ -1,10 +1,10 @@
 .blog {
   display: flex;
 
-
   &__photo {
     margin-top: -7rem;
     width: 20%;
+    object-fit: cover;
     transform: translateY(-5rem) translateX(-10rem);
     @media only screen and (max-width: $bp-large) {
       display: none;

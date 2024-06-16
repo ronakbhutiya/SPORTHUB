@@ -143,7 +143,7 @@ body {
 
 .landing {
   height: calc(100vh - 10rem);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("photo1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/photo1.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -319,6 +319,8 @@ body {
 
 .about-photo {
   width: 100%;
+  object-fit: contain;
+  height: 50rem;
 }
 
 .btn-secondary {
@@ -342,6 +344,7 @@ body {
 .blog__photo {
   margin-top: -7rem;
   width: 20%;
+  object-fit: cover;
   transform: translateY(-5rem) translateX(-10rem);
 }
 @media only screen and (max-width: 75em) {
